@@ -77,7 +77,7 @@ for (let i = 0; i < featureData.length; i += 1) {
   feature.innerHTML = `
     <div class="feature-item">
         <div class="feature-item-img">
-            <img src="${featureD.image}" alt="">
+            <img src="${featureD.image}" alt="picture">
         </div>
         <div class="feature-item-text">
             <h3>${featureD.name}</h3>
