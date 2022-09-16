@@ -14,7 +14,7 @@ This project is an event platform where people can learn on how to collaborate o
 
 ## Link to My Capston Video
 
-[Live Demo Video]()
+[Live Demo Video](https://www.loom.com/share/fafce362984d4d01ad7fae4d208451ba)
 
 ## Getting Started
 
