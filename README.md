@@ -10,7 +10,7 @@ This project is an event platform where people can learn on how to collaborate o
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://balikuddembe.github.io/capstone-project-1/)
 
 ## Link to My Capston Video
 
