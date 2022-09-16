@@ -243,7 +243,7 @@ nav.sticky {
 
 /* hero section */
 .hero {
-  background-image: url("img/img-2.jpg");
+  background-image: url("./Images/herobackground-1.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -254,7 +254,7 @@ nav.sticky {
 }
 
 .hero-bg {
-  background-image: url("img/herobackg-1.png");
+  background-image: url("./Images/herobackground-1.png");
   background-position: center;
   background-size: cover;
   padding: 5rem 0;
@@ -711,7 +711,7 @@ nav.sticky {
   /* ===== navbar ====== */
   .menu-btn {
     display: none;
-  }
+  } 
 
   .navbar-right {
     position: relative;
