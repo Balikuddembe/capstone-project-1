@@ -1,57 +1,55 @@
 const menuBtn = document.querySelector('.menu-btn');
-const navbar = document.getElementById('navbar');
-const navbarMenu = document.querySelector('.navbar-links');
+const navbarMenu = document.querySelector('.navbar-right');
 const featureList = document.querySelector('.feature-list');
 const showMore = document.querySelector('.more-btn');
-// const userPopup = document.querySelector('.user-login-popup');
-// const loginBtn = document.querySelector('.login-btn');
- Feature-data-Object
+
+// Feature data Object
 const featureData = [
-    {
-      name: 'Baraka Danny',
-      role: 'Full Stack Developer',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis.',
-      image: './Images/speaker1.png',
-    },
-    {
-      name: 'Sammy Lee',
-      role: 'creative director',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis.',
-      image: './Images/speaker2.png',
-    },
-    {
-      name: 'John Doe',
-      role: 'Team leader/ CEO',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis.',
-      image: './Images/speaker3.png',
-    },
-    {
-      name: 'Jane Hill',
-      role: 'Network Engineer/ Developer',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis.',
-      image: './Images/speaker4.png',
-    },
-    {
-      name: 'zoey mary',
-      role: 'Accountant Admin',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis.',
-      image: './Images/speaker5.png',
-    },
-    {
-      name: 'Tina Smith',
-      role: 'Front End Developer',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis.',
-      image: './Images/speaker6.png',
-    },
-  ];
-  
-  // burger menu action
+  {
+    name: 'yohai benkler',
+    role: 'Professor at Harvard Law School',
+    description:
+      'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia.',
+    image: './Images/speaker1.png',
+  },
+  {
+    name: 'Jeon Gil-nam',
+    role: 'Emeritus Professor, Korea Advanced Institute of Science and Technology (KAIST)',
+    description:
+      'By developing Asia first Internet protocol network SDN and leading Korea first private line Internet connection in 1990, it ushered in the era of the Internet in earnest.',
+    image: './Images/speaker2.png',
+  },
+  {
+    name: 'Noh So-young',
+    role: 'Art Center Nabi Director, CC Korea Director',
+    description:
+      'As the author of <Digital Art Art of Our Time>, he opened Art Center Nabi Korea first digital art institution in 2000 and is currently serving',
+    image: './Images/speaker3.png',
+  },
+  {
+    name: 'Julia Leda',
+    role: 'Head of the Young Pirates of Europe',
+    description:
+      'European integration and online youth participation in politics and democracy are major concerns, and a report has been published that will potentially affect the revision of the EU',
+    image: './Images/speaker4.png',
+  },
+  {
+    name: 'Layla Trettikov',
+    role: 'Secretary General of the Wikimedia Foundation',
+    description:
+      'Layla Tretikov is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages ​​every month to over 100 million people, nearly half of the world population.',
+    image: './Images/speaker5.png',
+  },
+  {
+    name: 'Ryan Merkley',
+    role: 'Creative Commons CEO, Former Mozilla Foundation COO',
+    description:
+      'He led open source projects at the Mozilla Foundation and joined CC as CEO in 2014. He has been active in open movements such as open government and open source.',
+    image: './Images/speaker6.png',
+  },
+];
+
+// hamburger menu
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
@@ -63,15 +61,6 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
-
-// sticky navigation menu
-window.onscroll = function () {
-  if (window.pageYOffset > 100) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-};
 
 // open menu on click
 menuBtn.addEventListener('click', (e) => {
