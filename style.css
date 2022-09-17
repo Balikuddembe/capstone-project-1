@@ -106,9 +106,16 @@ img {
   overflow-y: hidden;
 }
 
-/* nav css */
-.navbar-header a {
-  font-weight: 900;
+/* ================media querry for top bar and header */
+@media only screen and (max-width: 768px) {
+  .navbar-header a {
+    /* font-weight: 900; */
+    display: none;
+  }
+
+  .top-header {
+    display: none;
+  }
 }
 
 /* end nav small css */
@@ -186,7 +193,7 @@ nav.sticky {
 
 /* menu button css */
 .menu-btn {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,19 +249,20 @@ nav.sticky {
 }
 
 /* hero section */
-.hero {
+
+/* .hero {
   background-image: url("./Images/herobackground-1.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
-}
+} */
 
 .overlay {
   background-color: rgb(255, 255, 255, 0.7);
 }
 
 .hero-bg {
-  background-image: url("./Images/herobackground-1.png");
+  background-image: url("./Images/backgroundHero.png");
   background-position: center;
   background-size: cover;
   padding: 5rem 0;
@@ -332,7 +340,8 @@ nav.sticky {
 
 .program-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   gap: 1rem;
 }
 
@@ -422,7 +431,8 @@ nav.sticky {
 
 .feature-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+
+  /* grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); */
   gap: 2rem;
   overflow: hidden;
   height: 510px;
@@ -673,11 +683,12 @@ nav.sticky {
 .footer {
   color: var(--primary-color);
   padding: 1rem 0;
+  background-color: lavender;
 }
 
 .about-footer {
   color: white;
-  background-color: var(--primary-color) !important;
+  background-color: black;
 }
 
 .footer-content {
@@ -692,15 +703,19 @@ nav.sticky {
 
 .footer-content .footer-logo h1 {
   font-size: 20px;
+  padding-top: 25px;
 }
 
 .footer-content .footer-adress {
   font-size: 12px;
   font-weight: 500;
+  padding-top: 5px;
+  max-width: 500px;
 }
 
-/* ================= media query =============== */
-@media screen and (min-width: 768px) {
+
+/* ================= media query desktop version=============== */
+@media only screen and (min-width: 768px) {
   /* top navbar */
   .user-login-popup {
     position: absolute;
@@ -758,6 +773,10 @@ nav.sticky {
     flex-direction: column;
     padding: 1rem 0;
     text-align: center;
+  }
+
+  .program-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 5fr));
   }
 
   .program-item .program-item-text {
